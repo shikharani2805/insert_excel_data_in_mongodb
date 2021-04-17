@@ -18,9 +18,7 @@ def InsertData(path=None):
 
     data_json = json.loads(data.to_json(orient='records'))
 
-
     mycol.insert_many(data_json)
-
 
     print("All the Data inserted in Mongo DB Server .... ")
 
